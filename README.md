@@ -3,7 +3,6 @@
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-informational.svg)](https://github.com/Rishav15062003/security-operations-suite)
 [![Last Commit](https://img.shields.io/github/last-commit/Rishav15062003/security-operations-suite)](https://github.com/Rishav15062003/security-operations-suite/commits/main)
-[![Repo Size](https://img.shields.io/github/repo-size/Rishav15062003/security-operations-suite)](https://github.com/Rishav15062003/security-operations-suite)
 [![Issues](https://img.shields.io/github/issues/Rishav15062003/security-operations-suite)](https://github.com/Rishav15062003/security-operations-suite/issues)
 
 A unified desktop application for blue-team workflows, combining log threat detection, cloud misconfiguration scanning, attack-surface analysis, phishing checks, and network traffic analytics in one interface.
