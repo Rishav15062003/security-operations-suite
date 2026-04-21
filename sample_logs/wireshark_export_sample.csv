@@ -1,0 +1,6 @@
+"No.","Time","Source","Destination","Protocol","Length","Info"
+"1","0.000000","192.168.1.10","192.168.1.1","TCP","74","SYN"
+"2","0.001234","192.168.1.10","192.168.1.1","TCP","66","ACK"
+"3","0.050000","192.168.1.10","8.8.8.8","DNS","89","Standard query A example.com"
+"4","0.120000","10.0.0.5","10.0.0.12","TLS","1514","Application Data"
+"5","0.121000","10.0.0.5","10.0.0.12","TLS","120","Alert (Level: Fatal, Description: Handshake Failure)"

@@ -1,0 +1,21 @@
+# Security Operations Suite — Python 3.10+ (log analysis + cloud scanning)
+# Packet captures (.pcap / .pcapng)
+scapy>=2.5.0
+rich>=13.0.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+python-dateutil>=2.8.0
+customtkinter>=5.2.0
+packaging>=21.0
+pyinstaller>=6.0.0
+# Cloud scanner (AWS / Azure)
+boto3>=1.34.0
+botocore>=1.34.0
+azure-identity>=1.15.0
+azure-mgmt-network>=25.0.0
+azure-mgmt-storage>=21.0.0
+azure-core>=1.29.0
+# Mini ARES (attack surface)
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+httpx>=0.26.0

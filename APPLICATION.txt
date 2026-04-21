@@ -1,0 +1,61 @@
+Security Operations Suite — desktop application
+================================================
+
+WHAT IT IS
+  One Windows/Linux GUI for:
+  - Log analysis (threat detection)
+  - Cloud misconfiguration scanning (AWS / Azure)
+  - Attack surface mapping (Mini ARES)
+
+LOG ANALYSIS — SUPPORTED INPUTS
+  - Linux/SSH style auth logs (e.g. auth.log, syslog with sshd/pam lines)
+  - Binary packet captures (requires the “scapy” dependency from requirements.txt):
+      * .pcapng  and  .pcap  — opened directly; each frame becomes a parsed packet row for analysis.
+  - Wireshark / tshark text exports:
+      * File → Export Packet Dissections → As CSV  (.csv)
+      * tshark one-line summary (frame, time, src → dst, protocol, length, info)
+      * Tab-separated or “list” style packet rows (IPv4; IPv6 in CSV/tshark)
+    Tip: sample files are under sample_logs\ (e.g. wireshark_export_sample.csv, minimal_capture.pcapng)
+    Note: Full PDML/PSML XML is not parsed here — export as CSV or plain text, or use .pcapng.
+
+PERFORMANCE (large captures)
+  - Default: only the first 250,000 packets from .pcap/.pcapng are loaded (sidebar: Max PCAP packets).
+  - Enter 0 for no limit (very large files may freeze the app for a long time).
+  - ML (Isolation Forest) is skipped automatically when there are more than 100,000 parsed rows.
+
+LOG FILE INFO TAB
+  - After Run analysis, open “Log file info” for file size, parse coverage, time span,
+    auth summaries, and packet/capture summaries (when applicable).
+
+RUN WITHOUT BUILDING AN EXE
+  1) Open a terminal in this project folder (the folder that contains run_gui.py).
+  2) Install once:  pip install -r requirements.txt
+  3) Start the GUI using any of:
+       python run_gui.py
+       python -m threat_analyzer
+       (Windows) double-click  Start Security Suite.bat
+
+BUILD A STANDALONE APP (recommended for distribution)
+  Windows (PowerShell):
+    .\build_windows.ps1
+  Linux:
+    chmod +x build_linux.sh && ./build_linux.sh
+  Output: dist/SecuritySuite.exe  (Windows)  or  dist/SecuritySuite  (Linux)
+  Run the built app by double-clicking the executable in dist\
+
+OPTIONAL API (Mini ARES)
+  python -m mini_ares
+  Open http://127.0.0.1:8765/docs
+
+MINI ARES — ATTACK SURFACE TOOLS (optional)
+  The GUI “Attack surface” tab can check and install optional binaries:
+  - nmap — faster port scans (otherwise Python TCP connect is used).
+  - subfinder — extra subdomain discovery (otherwise crt.sh passive lists are used).
+  - Go — only needed to build subfinder from source if not installed via package manager.
+  Use “Check tools” / “Install missing (auto)” in the tab, or run scripts manually:
+    Windows:  powershell -ExecutionPolicy Bypass -File .\scripts\install_mini_ares_tools.ps1
+    Linux:    bash scripts/install_mini_ares_tools.sh
+  Linux auto-install may prompt for your password (pkexec/sudo). Windows may use winget.
+
+REQUIREMENTS
+  Python 3.10+ and: pip install -r requirements.txt

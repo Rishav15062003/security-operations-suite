@@ -1,0 +1,11 @@
+{
+  "aws": {
+    "regions": ["us-east-1", "eu-west-1"],
+    "profile": null,
+    "skip_buckets": []
+  },
+  "azure": {
+    "subscription_id": "",
+    "resource_groups": []
+  }
+}

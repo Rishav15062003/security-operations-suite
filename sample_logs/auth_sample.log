@@ -1,0 +1,38 @@
+Jan  6 02:15:22 prod sshd[4100]: Accepted password for deploy from 203.0.113.50 port 22 ssh2
+Jan  6 02:16:01 prod sshd[4101]: Accepted password for alice from 203.0.113.50 port 22 ssh2
+Jan  6 02:16:10 prod sshd[4102]: Accepted password for bob from 203.0.113.50 port 22 ssh2
+Jan  6 02:16:22 prod sshd[4103]: Accepted password for carol from 203.0.113.50 port 22 ssh2
+Jan  6 02:16:35 prod sshd[4104]: Accepted password for dave from 203.0.113.50 port 22 ssh2
+Jan  6 02:16:40 prod sshd[4105]: Accepted password for eve from 203.0.113.50 port 22 ssh2
+Jan  6 09:30:00 prod sshd[5000]: Accepted password for alice from 192.168.1.10 port 22 ssh2
+Jan  6 09:31:00 prod sshd[5001]: Failed password for root from 198.51.100.1 port 22 ssh2
+Jan  6 09:31:02 prod sshd[5001]: Failed password for root from 198.51.100.1 port 22 ssh2
+Jan  6 09:31:04 prod sshd[5001]: Failed password for root from 198.51.100.1 port 22 ssh2
+Jan  6 09:31:06 prod sshd[5001]: Failed password for root from 198.51.100.1 port 22 ssh2
+Jan  6 09:31:08 prod sshd[5001]: Failed password for root from 198.51.100.1 port 22 ssh2
+Jan  6 09:31:10 prod sshd[5001]: Failed password for root from 198.51.100.1 port 22 ssh2
+Jan  6 09:31:12 prod sshd[5001]: Failed password for admin from 198.51.100.1 port 22 ssh2
+Jan  6 09:31:14 prod sshd[5001]: Failed password for admin from 198.51.100.1 port 22 ssh2
+Jan  6 09:31:16 prod sshd[5001]: Failed password for test from 198.51.100.1 port 22 ssh2
+Jan  6 09:31:18 prod sshd[5001]: Failed password for test from 198.51.100.1 port 22 ssh2
+Jan  6 09:31:20 prod sshd[5001]: Failed password for ubuntu from 198.51.100.1 port 22 ssh2
+Jan  6 10:00:00 prod sshd[6000]: Failed password for invalid user scanner from 192.0.2.10 port 22 ssh2
+Jan  6 10:00:01 prod sshd[6000]: Failed password for invalid user scanner from 192.0.2.11 port 22 ssh2
+Jan  6 10:00:02 prod sshd[6000]: Failed password for invalid user scanner from 192.0.2.12 port 22 ssh2
+Jan  6 10:00:03 prod sshd[6000]: Failed password for invalid user scanner from 192.0.2.13 port 22 ssh2
+Jan  6 10:00:04 prod sshd[6000]: Failed password for invalid user scanner from 192.0.2.14 port 22 ssh2
+Jan  6 10:00:05 prod sshd[6000]: Failed password for invalid user scanner from 192.0.2.15 port 22 ssh2
+Jan  6 10:00:06 prod sshd[6000]: Failed password for invalid user scanner from 192.0.2.16 port 22 ssh2
+Jan  6 10:00:07 prod sshd[6000]: Failed password for invalid user scanner from 192.0.2.17 port 22 ssh2
+Jan  6 10:00:08 prod sshd[6000]: Failed password for invalid user scanner from 192.0.2.18 port 22 ssh2
+Jan  6 10:00:09 prod sshd[6000]: Failed password for invalid user scanner from 192.0.2.19 port 22 ssh2
+Jan  6 10:00:10 prod sshd[6000]: Failed password for invalid user scanner from 192.0.2.20 port 22 ssh2
+Jan  6 10:00:11 prod sshd[6000]: Failed password for invalid user scanner from 192.0.2.21 port 22 ssh2
+Jan  6 10:00:12 prod sshd[6000]: Failed password for invalid user scanner from 192.0.2.22 port 22 ssh2
+Jan  6 10:00:13 prod sshd[6000]: Failed password for invalid user scanner from 192.0.2.23 port 22 ssh2
+Jan  6 10:00:14 prod sshd[6000]: Failed password for invalid user scanner from 192.0.2.24 port 22 ssh2
+Jan  6 10:00:15 prod sshd[6000]: Failed password for invalid user scanner from 192.0.2.25 port 22 ssh2
+Jan  6 10:00:16 prod sshd[6000]: Failed password for invalid user scanner from 192.0.2.26 port 22 ssh2
+Jan  6 10:01:00 prod sudo: pam_unix(sudo:auth): authentication failure; logname=alice user=alice
+Jan  6 10:01:01 prod sudo: pam_unix(sudo:auth): authentication failure; logname=bob user=bob
+Jan  6 10:02:00 prod passwd[7000]: password changed for deploy

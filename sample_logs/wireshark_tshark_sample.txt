@@ -1,0 +1,4 @@
+# tshark -V style one-line summary (example)
+1 0.000000 192.168.1.10 → 192.168.1.1 TCP 74 SYN
+2 0.001234 192.168.1.10 → 192.168.1.1 TCP 66 ACK
+3 0.050000 fe80::1 → fe80::2 ICMPv6 86 Echo (ping) request
